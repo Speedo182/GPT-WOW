@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPT-WOW Register</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/register.css') }}">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='img/logo.png') }}" alt="GPT-WOW Logo">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('login') }}">Login</a></li>
+                <li><a href="{{ url_for('register') }}">Register</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="register-container">
+        <h2>Register for GPT-WOW</h2>
+        <form method="POST" action="{{ url_for('register') }}">
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm_password">Confirm Password</label>
+                <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm your password" required>
+            </div>
+            <div class="form-group">
+                <label for="security_question">Security Question</label>
+                <select id="security_question" name="security_question">
+                    <option value="What is your mother's maiden name?">What is your mother's maiden name?</option>
+                    <option value="What is your favorite color?">What is your favorite color?</option>
+                    <option value="What is the name of your first pet?">What is the name of your first pet?</option>
+                    <option value="What is your favorite movie?">What is your favorite movie?</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="security_answer">Security Answer</label>
+                <input type="text" id="security_answer" name="security_answer" placeholder="Enter your security answer" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

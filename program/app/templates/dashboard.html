@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+<div class="container">
+  <h1>Welcome to the GPT-WOW dashboard</h1>
+  <p>Here you can manage all your tasks and access all the features of the app</p>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h2>Social Media</h2>
+        </div>
+        <div class="card-body">
+          <p>Access all your social media accounts and manage your posts from one place.</p>
+          <a href="{{ url_for('social_media') }}" class="btn btn-primary">Go to Social Media</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h2>File Management</h2>
+        </div>
+        <div class="card-body">
+          <p>Upload and manage all your files in one place.</p>
+          <a href="{{ url_for('file_management') }}" class="btn btn-primary">Go to File Management</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h2>Programming</h2>
+        </div>
+        <div class="card-body">
+          <p>Access programming tools and write code in multiple languages.</p>
+          <a href="{{ url_for('programming') }}" class="btn btn-primary">Go to Programming</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h2>Machine Learning</h2>
+        </div>
+        <div class="card-body">
+          <p>Train and deploy machine learning models with ease.</p>
+          <a href="{{ url_for('machine_learning') }}" class="btn btn-primary">Go to Machine Learning</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,109 @@
+/* social_media.css */
+
+/* Header */
+.social-media-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #2b2d42;
+  color: #fff;
+}
+
+.social-media-header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.social-media-header ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-media-header li {
+  margin: 0 1rem;
+}
+
+.social-media-header a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.social-media-header a:hover {
+  text-decoration: underline;
+}
+
+/* Main */
+.social-media-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.social-media-post {
+  margin: 2rem;
+  max-width: 500px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.social-media-post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f0f0f0;
+  font-size: 1.2rem;
+}
+
+.social-media-post-header h2 {
+  margin: 0;
+}
+
+.social-media-post-header span {
+  font-size: 1rem;
+  color: #666;
+}
+
+.social-media-post-body {
+  padding: 1rem;
+}
+
+.social-media-post-body p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.social-media-post-footer {
+  padding: 1rem;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-media-post-footer ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-media-post-footer li {
+  margin-right: 1rem;
+}
+
+.social-media-post-footer a {
+  color: #666;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.social-media-post-footer a:hover {
+  text-decoration: underline;
+}

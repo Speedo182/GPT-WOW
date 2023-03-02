@@ -1,0 +1,71 @@
+/* programming.css */
+
+/* Code Block Styling */
+pre {
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  line-height: 1.5em;
+  padding: 10px;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+/* Syntax Highlighting */
+pre code {
+  color: #333;
+  display: block;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  overflow-x: auto;
+  padding: 0 1em;
+}
+
+/* Comment Styling */
+pre code .comment {
+  color: #999;
+  font-style: italic;
+}
+
+/* String Literal Styling */
+pre code .string {
+  color: #090;
+}
+
+/* Keyword Styling */
+pre code .keyword {
+  color: #07c;
+  font-weight: bold;
+}
+
+/* Operator Styling */
+pre code .operator {
+  color: #9a6e3a;
+}
+
+/* Number Styling */
+pre code .number {
+  color: #164;
+}
+
+/* Function Styling */
+pre code .function {
+  color: #00c;
+  font-weight: bold;
+}
+
+/* Error Styling */
+pre code .error {
+  background-color: #fdd;
+  color: #f00;
+}
+
+/* Link Styling */
+a {
+  color: #07c;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
